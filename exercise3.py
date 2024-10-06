@@ -1,8 +1,6 @@
-
-
 def vowelsToUpper(sentence):
     vowels = 'aeiou'
-    transformed = [char.upper() if char in vowels else char for char in sentence]
+    transformed = ''.join([char.upper() if char in vowels else char for char in sentence])
     return transformed
 
-vowelsToUpper("hi hello word mah homie")
+print(vowelsToUpper("hi hello word mah homie"))
